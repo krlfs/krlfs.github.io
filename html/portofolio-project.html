@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"> </script>
+<link rel="stylesheet" href="../css/portofolio.css">
+<title>Portofolio Website</title>
+<style>
+        .mySlides {display:none;}
+        </style>
+</head>
+  <body>
+
+	<div class="wrapper">
+        <section class="header">
+            <h1> Projecten <i class="fas fa-clipboard-list"></i> Kay Roelofsen <h1>
+              </section>
+    </div>
+	  <nav class="main-nav">
+		<ul>
+          <li><a href="../html/portofolio.html"><i class="fas fa-home"></i> Home </a></li>
+          <li><a href="../html/portofolio-project.html"><i class="fas fa-clipboard-list"></i> Projecten </a></li>
+          <li><a href="../html/portofolio-projectstarten.html"><i class="fas fa-chalkboard-teacher"></i> Project Starten </a></li>
+          <li><a href="../html/portofolio-contact.html"><i class="fas fa-comments"></i> Contact </a></li>
+		</ul>
+      </nav>
+      <section class="info">
+            <div class="w3-content w3-display-container">
+            <img class="mySlides" src="../images/login.png">
+            <img class="mySlides" src="../images/regi.png">
+            <img class="mySlides" src="../images/kay.png">          
+            <img class="mySlides" src="../images/welkom.png">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+            <div>
+                 <h2>Social Media Website</h2>
+                 <p>Social Media website met inlog/uitlog en registratie register. 
+                 </p>
+                <a href="#" class="btn">Kom meer te weten over deze website</a>
+            </div>
+				 <img src="../images/city.jpg" alt="">
+				   <div>
+						<h2>Website</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							 Praesentium fugit amet reprehenderit cum obcaecati facere 
+							 iste exercitationem aspernatur, distinctio ea libero odio omnis
+							 enim consequatur magnam nostrum soluta quaerat deserunt!
+						</p>
+					   <a href="#" class="btn">Kom meer te weten</a>
+				   </div>
+             </section>
+             
+             <section class="portofolio">
+                   
+                </section>
+   
+
+      <footer>
+            <p>Kay Roelofsen &copy; 2018</p>
+        </footer>
+
+</div>
+</body>
+</html>
