@@ -22,26 +22,68 @@
 		<ul>
           <li><a href="../index.html"><i class="fas fa-home"></i> Home </a></li>
           <li><a href="../html/portofolio-project.html"><i class="fas fa-clipboard-list"></i> Projecten </a></li>
-          <li><a href="../html/portofolio-projectstarten.html"><i class="fas fa-chalkboard-teacher"></i> Project Starten </a></li>
+          <li><a href="../html/portofolio-projectstarten.html"><i class="fas fa-chalkboard-teacher"></i>Strengths and Weaknesses </a></li>
           <li><a href="../html/portofolio-contact.html"><i class="fas fa-comments"></i> Contact </a></li>
 		</ul>
       </nav>
       <section class="info">
-            <div class="w3-content w3-display-container">
-            <img class="mySlides" src="../images/login.png">
-            <img class="mySlides" src="../images/regi.png">
-            <img class="mySlides" src="../images/kay.png">          
-            <img class="mySlides" src="../images/welkom.png">
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-          </div>
-          <script>
-                var slideIndex = 1;
-                showDivs(slideIndex);
-                
-                function plusDivs(n) {
-                  showDivs(slideIndex += n);
+        <div class="w3-content w3-display-container">
+        <img class="mySlides" src="../images/login.png">
+        <img class="mySlides" src="../images/regi.png">
+        <img class="mySlides" src="../images/kay.png">          
+        <img class="mySlides" src="../images/welkom.png">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+       <div>
+        <h2>At The Beach</h2>
+        <p>Website voor een festival in Nederland. 
+        </p>
+       <a href="beach.html">Kom meer te weten over deze website</a>
+   </div>
+        <div class="w3-content w3-display-container1">
+          <img class="mySlides1" src="../images/website2.png">
+          <img class="mySlides1" src="../images/website1.png">
+          <img class="mySlides1" src="../images/website3.png">          
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+              
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides1");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
                 }
+<<<<<<< HEAD
                 
                 function showDivs(n) {
                   var i;
@@ -75,6 +117,22 @@
              <section class="portofolio">
                    
                 </section>
+=======
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
+           <div>
+            <h2>Social Media Website</h2>
+            <p>Social Media website met inlog/uitlog en registratie register. 
+            </p>
+            <a href="feed.html">Kom meer te weten over deze website</a>
+       </div>
+         </section>
+         
+         <section class="portofolio">
+               
+            </section>
+>>>>>>> 0832bf52699cdf7d2e2b1e26cc50b9d819c7d81b
    
 
       <footer>
