@@ -13,7 +13,12 @@
     }
     
     body{
-    background:  #2D2E2F;
+        background-image: linear-gradient(-225deg, #285db6 0%, #FFE6FA 100%);
+        background-image: linear-gradient(to top,   #7c1c70 0%,  #15305D 100%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        overflow:hidden;  
+        opacity: .95;
     margin: 30px 50px;
     line-height: 1.4;
     }
