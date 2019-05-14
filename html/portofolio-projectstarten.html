@@ -6,58 +6,101 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"> </script>
 <link rel="stylesheet" href="../css/portofolio.css">
-<title>Strengths and Weaknesses</title>
+<title>Over Mij</title>
 </head>
   <body>
 
-	<div class="wrapper">
-        <section class="header">
-            <h1> Strengths and Weaknesses <i class="fas fa-chalkboard-teacher"></i> <h1>
-              </section>
-    </div>
-	  <nav class="main-nav">
-		<ul>
-          <li><a href="../index.html"><i class="fas fa-home"></i> Home </a></li>
-          <li><a href="../html/portofolio-project.html"><i class="fas fa-clipboard-list"></i> Projecten </a></li>
-          <li><a href="../html/portofolio-projectstarten.html"><i class="fas fa-chalkboard-teacher"></i> Strengths and Weaknesses </a></li>
-          <li><a href="../html/portofolio-contact.html"><i class="fas fa-comments"></i> Contact </a></li>
-		</ul>
-      </nav>
-      <section class="info">
-            <img src="../images/streng.jpeg" alt="">
-            <div>
-                 <h2>Strengths</h2>
-                 <p>Ik werk hard.</p>
-                 <p>Ik hou ervan om andere te helpen. </p>
-                 <p>Ik houd mijn beloften.</p>
-                 
-                 
-                 
-                 
+
+    <script>
+        function closeSlideMenu(){
+       document.getElementById('menu').style.width = '0px';
+       document.getElementById('content').style.marginLeft = '0px';
+        }
+        function openSlideMenu(){
+       document.getElementById('menu').style.width = '250px';
+       document.getElementById('content').style.marginLeft = '250px';
+        }
+       </script>
+       </head>
+         <body>
+           <div id="content">
+              <div class="wrapper">
+                  <section class="header">
+                      <h1> Over mij <i class="fas fa-child"></i><h1>
+                        </section>
+              </div>
+       
+             <span class="slide">
+               <a href="#" onclick="openSlideMenu()">
+               <i class="fas fa-bars"></i>
+               </a>
+             </span>
+       
+             <div id="menu" class="nav">
+               <a href="#" class="close" onclick="closeSlideMenu()">
+               <i class="fas fa-times"></i>
+               </a>
+               <a href="../index.html">Home</a>
+               <a href="../krlfs.github.io/html/portofolio-projectstarten.html">Over mij</a>
+               <a href="../krlfs.github.io/html/portofolio-project.html">Projecten</a>
+               <a href="../krlfs.github.io/html/portofolio-contact.html">Contact</a>
+             </div>
+             <section class="info">
+                <img src="../images/foto3.jpg" alt="">
                 
-            </div>
-				 <img src="../images/weak.jpeg" alt="">
-				   <div>
-						<h2>Weaknesses</h2>
-            <p>Ik geef voorkeur om alleen te werken. </p>
-            <p>Ik handel soms zonder na te denken </p>
-            <h2>Hobbies</h2>
-                 <p>Game.</p>
-                 <p>Muziek Produceren. </p>
-                 <p>Foto en Video editing / Logo Design.</p>
-            
-					  
-				   </div>
-             </section>
-             
-             <section class="portofolio">
+                <div>
+                  <h2>Strengths</h2>
+                  <p>Ik werk hard.</p>
+                  <p>Ik hou ervan om andere te helpen.</p>                      
+                  <p>Ik hou mijn beloften.</p>
+                  <p>Ik ben goed met de volgende talen:</p>
+                  <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>PHP</li>
+                    <li>MySql</li>
+                    <li>Javascript</li>
+                  </ul>
+                  <h3>Overige Software:</h3>
+                  <ul>
+                      <li>Adobe Photoshop</li>
+                      <li>Adobe Illustrator</li>
+                      <li>Microsoft Word/Excel en Powerpoint</li>
+                      <li>Fl Studio</li>
+                    </ul>
+                </div>
+                <img src="../images/foto1.jpeg" alt="">
+                <div>
+                  <h2>Weaknesses</h2>
+                  <p>Ik geef voorkeur om alleen te werken.</p>
+                  <p>Ik handel soms zonder na te denken</p>   
+
+                  <h2>Hobbies</h2>
+                  <p>Game.</p>
+                  <p>Muziek Produceren.</p> 
+                  <p>Foto en Video editing / Logo Design.</p>    
+                </div>
+               
+                  
+                </div>
+           
+               
+                
+                 </section>
+                 
+                 <section class="portofolio">
                    
-                </section>
+                 </section>
+    <!--  
+        <footer>
+            <p>Kay Roelofsen &copy; 2018</p>
+        </footer> -->
+
+             </div>
+           </div>
+      
    
 
-      <footer>
-            <p>Kay Roelofsen &copy; 2018</p>
-        </footer>
 
 </div>
 </body>
